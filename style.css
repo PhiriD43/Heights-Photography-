@@ -1,0 +1,115 @@
+body {
+      background-color: #808080;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* center the image horizontally */
+    margin: 30px 0;
+}
+
+section {
+  width: 95%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 15s ease-in-out;
+  
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 350px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
